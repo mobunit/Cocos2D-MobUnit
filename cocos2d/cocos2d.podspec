@@ -20,7 +20,7 @@
   "subspecs": [
     {
       "name": "cocos2d",
-      "source_files": "cocos2d/**/*.{h,m,c}",
+      "source_files": "cocos2d/*.{h,m,c}",
       "frameworks": [
         "CoreGraphics",
         "OpenGLES",
