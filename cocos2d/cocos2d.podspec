@@ -16,7 +16,7 @@
     "ios": "5.0"
   },
   "source_files": "cocos2d/*.{h,m}",
-  "public_header_files": "cocos2d /*.h",
+  "public_header_files": "cocos2d/*.h",
   "frameworks": [
     "CoreGraphics",
         "OpenGLES",
