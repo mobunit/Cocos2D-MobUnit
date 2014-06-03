@@ -1,52 +1,26 @@
 {
   "name": "cocos2d",
-  "license": {
-    "type": "MIT",
-    "file": "LICENSE_cocos2d.txt"
-  },
-  "version": "1.1.rc0",
-  "summary": "cocos2d for iPhone is a framework for building 2D games, demos, and other graphical/interactive applications.",
-  "description": "cocos2d for iPhone is a framework for building 2D games, demos, and other graphical/interactive applications for iPod Touch, iPhone, iPad and Mac. It is based on the cocos2d design but instead of using python it, uses Objective-C.",
-  "homepage": "http://www.cocos2d-iphone.org",
+  "version": "1.0.1",
+  "summary": "Easily add support for seamless App.net login via the Passport app.",
+  "description": "        The ADNLogin SDK is the easiest and fastest way to add support for authentication\n        for the App.net API via the Passport app. This SDK allows you to detect the\n        presence of the Passport app on a user's device and request an access token\n        if it is installed.\n",
+  "homepage": "https://developers.app.net/",
+  "license": "MIT",
   "authors": {
-    "Ricardo Quesada": "ricardoquesada@gmail.com",
-    "Zynga Inc.": "https://zynga.com/"
+    "Bryan Berg": "bryan@app.net"
   },
   "source": {
-    "git": "https://github.com/mobunit/Cocos2D-MobUnit.git",
+    "git": "https://github.com/appdotnet/ADNLogin-SDK-iOS.git",
+    "commit": "002e4530a469503108feb7bf9229e98f77946f82"
   },
-  "default_subspec": "cocos2d",
-  "requires_arc": false,
-  "subspecs": [
-    {
-      "name": "cocos2d",
-      "source_files": "cocos2d/*.{h,m,c}",
-      "frameworks": [
-        "CoreGraphics",
+  "platforms": {
+    "ios": "5.0"
+  },
+  "source_files": "cocos2d/*.{h,m}",
+  "public_header_files": "cocos2d /*.h",
+  "frameworks": [
+    "CoreGraphics",
         "OpenGLES",
         "QuartzCore"
-      ],
-      "libraries": "z",
-      "resources": "Resources/Fonts/fps_images*.png",
-      "header_mappings_dir": "cocos2d",
-      "ios": {
-        "dependencies": {
-          "FontLabel": [
-
-          ]
-        }
-      }
-    },
-    {
-      "name": "CocosDenshion",
-      "source_files": "CocosDenshion/CocosDenshion/*.{h,m}",
-      "frameworks": [
-        "AVFoundation",
-        "OpenAL",
-        "CoreFoundation",
-        "AudioToolbox",
-        "Foundation"
-      ]
-    }
-  ]
+  ],
+  "requires_arc": false
 }
